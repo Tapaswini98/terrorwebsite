@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="It's a site with terror analysis">
+  <meta name="keyword" content="terror,terroranalysis,terrorist">
+  <meta name="author" content="forskcodingschool">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--My CSS-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Fontawesome CSS-->
+  <link href="fonts/fontawesome/css/all.css" rel="stylesheet">
+  <title>terroranalysis</title>
+</head>
+
+<body>
+
+  <!--header-->
+
+  <nav class="navbar navbar-expand-lg navbar-light myBg">
+    <a class="navbar-brand" href="index.html">TERROR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse collapse_custom" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active" href="services.html">Services</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!--End of header-->
+
+    <!--breadcromp-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Services</li>
+        </ol>
+    </nav>
+    <!--breadcromp-->
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <h1 class="display-4">Services</h1>
+        <p class="lead">This is about our services</p>
+        <hr class="my-4">
+    </div>
+    <!--End of Jumbotron-->
+    <!--Services-->
+    <div class="container service">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <span class="anchor" id="formLogin"></span>
+                        <!-- form card login -->
+                        <div class="card card-outline-secondary">
+                            <div class="card-header">
+                                <h3 class="mb-0 text-center gen">Generate Report</h3>
+                            </div>
+                            <div class="card-body">
+                                <form method ="POST" action="" autocomplete="off" class="form" id="formLogin" name="formLogin" role="form">
+                                  <div class="form-inline">
+                                    <div class="form-group mr-4">
+                                        <label> Start Month</label>
+                                        <select name="Month" id="m" onchange="obtaindays()" required autofocus>
+                                            <option value="">Select Month</option>
+                                            <option value="01">January</option>
+                                            <option value="02">February</option>
+                                            <option value="03">March</option>
+                                            <option value="04">April</option>
+                                            <option value="05">May</option>
+                                            <option value="06">June</option>
+                                            <option value="07">July</option>
+                                            <option value="08">August</option>
+                                            <option value="09">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Start Date</label>
+                                        <select name="Day" id="d" required autofocus>
+                                            <option value="null">Select Day</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="form-group mr-4">
+                                        <label>End Month</label>
+                                        <select name="Month" id="em" onchange="obtainenddays()" required >
+                                            <option value="">Select Month</option>
+                                            <option value="01">January</option>
+                                            <option value="02">February</option>
+                                            <option value="03">March</option>
+                                            <option value="04">April</option>
+                                            <option value="05">May</option>
+                                            <option value="06">June</option>
+                                            <option value="07">July</option>
+                                            <option value="08">August</option>
+                                            <option value="09">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>End Date</label>
+                                        <select name="Day" id="endDay" required>
+                                            <option value="null">Select Day</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                    <div class="form-group">
+                                        <label>Attack Type</label>
+                                        <select id="attacktype" required>
+                                            <option value="attaktype" required>Select Type</option>
+                                            <option value="Bombing">Bombing</option>
+                                            <option value="Kidnapping">Kidnapping</option>
+                                            <option value="Assasination">Assasinatin</option>
+                                            <option value="Gang Event">Gang Event</option>
+                                            <option value="Terror">Terror</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Region</label>
+                                        <select name="Region" id="region" onchange="obtainregions()" required>
+                                            <option value="selectregion">Select Region</option>
+                                            <option value="North America">North America</option>
+                                            <option value="Central America & Caribbean">Central America & Caribbean
+                                            </option>
+                                            <option value="South America">South America</option>
+                                            <option value="East Asia">East Asia</option>
+                                            <option value="Southeast Asia">Southeast Asia</option>
+                                            <option value="South Asia">South Asia</option>
+                                            <option value="Central Asia">Central Asia</option>
+                                            <option value="Western Europe">Western Europe</option>
+                                            <option value="Eastern Europe">Eastern Europe</option>
+                                            <option value="Middle East & North Africa">Middle East & North Africa
+                                            </option>
+                                            <option value="Sub-Saharan Africa">Sub-Saharan Africa</option>
+                                            <option value="Australasia & Oceania">Australasia & Oceania</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <select id="country">
+                                            <option value="">Select Country</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <select id="city">
+                                          <option value="">Select City</option>
+                                          <option>New Delhi</option>
+                                          <option>Srinagar</option>
+                                          <option>Bombay</option>
+                                          <option>Pulwama</option>
+                                          <option>Odisha</option>
+                                        </select>
+                                    </div>
+                            
+                                    <div class="text-center">
+                                        <button class="btn btn-success btn-lg text-center" type="button">Generate</button>
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Select Output</label>
+                                      <select id="output" required>
+                                          <option value="0">Select Output</option>
+                                          <option value="1">Output 1</option>
+                                          <option value="2">Output 2</option>
+                                          <option value="3">Output 3</option>
+                                          <option value="4">Output 4</option>
+                                          <option value="5">Output 5</option>
+                                          <option value="6">Output 6</option>
+                                          <option value="7">Output 7</option>
+                                          <option value="8">Output 8</option>
+                                          <option value="9">Output 9</option>
+                                          <option value="10">Output 10</option>
+                                          <option value="11">Output 11</option>
+                                          <option value="12">Output 12</option>
+                                          <option value="13">Output 13</option>
+                                          <option value="14">Output 14</option>
+                                          <option value="15">Output 15</option>
+                                          <option value="16">Output 16</option>
+                                          <option value="17">Output 17</option>
+                                          <option value="18">Output 18</option>
+                                          <option value="19">Output 19</option>
+                                          <option value="20">Output 20</option>
+                                          <option value="21">Output 21</option>
+                                          <option value="22">Output 22</option>
+                                          <option value="23">Output 23</option>
+                                          <option value="24">Output 24</option>
+                                          <option value="25">Output 25</option>
+                                          <option value="26">Output 26</option>
+                                          <option value="27">Output 27</option>
+                                          <option value="28">Output 28</option>
+                                          <option value="29">Output 29</option>
+                                          <option value="30">Output 30</option>
+                                          <option value="31">Output 31</option>
+                                          <option value="32">Output 32</option>
+                                          <option value="33">Output 33</option>
+                                          <option value="34">Output 34</option>
+                                          <option value="35">Output 35</option>
+                                          <option value="36">Output 36</option>
+                                          <option value="37">Output 37</option>
+                                          <option value="38">Output 38</option>
+                                          <option value="39">Output 39</option>
+                                          <option value="40">Output 40</option>
+                                          
+                                      </select>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn btn-success btn-lg text-center" type="button">Generate Graph</button>
+                                    </div>
+                                  </div>
+                                </form>
+                            </div>
+                            <!--/card-block-->
+                        </div><!-- /form card login -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--End of Services-->
+    <!--footer-->
+    <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+              <br />
+              <a href="index.html">
+              <h4> TERROR </h4>
+              </a>
+              <p> We provide data on terror analysis for past 40 years</p>
+              <div class="row">
+                <a href="https://www.facebook.com/forsklabs">
+                <i class="fab fa-facebook-f socialMediaIcons marginWhenInMobile"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UC01oec_kXIqP__GAaSi7npQ">
+                <i class="fab fa-twitter socialMediaIcons"></i>
+              </a>
+              <a href="https://www.instagram.com/forskcodingschool/">
+                <i class="fab fa-instagram socialMediaIcons"></i>
+              </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+              <br /><br />
+              <ul class="noStyleType">
+                <li>Address: somewhere on earth</li>
+                <li>Mobile: +1 333 444 555</li>
+                <li>Email:forskcoding@gmail.com</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                  <br /><br />
+                  <ul class="noStyleType">
+                    <a href="services.html">
+                      <li>Services</li>
+                    </a>
+                    <a href="contactus.html">
+                      <li>Contact Us</li>
+                    </a>
+                    <a href="gallery.html">
+                      <li>Gallery</li>
+                    </a>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--End the footer-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

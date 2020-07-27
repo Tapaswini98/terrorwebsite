@@ -1,0 +1,236 @@
+.myBg {
+    background-color: rgb(205, 205, 205);
+
+}
+
+#slideshowimg {
+    height: 698px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    color: rgb(167, 87, 87);
+    top: 40%;
+    buttom: auto;
+    font-size: larger;
+    font-style: italic;
+    font-family: sans-serif;
+
+}
+
+.myBanner {
+    background-color: rgb(204, 195, 195);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.myhr {
+    height: 1px;
+    border-top: 2px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    width: 5%;
+}
+
+.imgwho {
+    height: 100%;
+    width: 100%;
+
+}
+
+.mytriotext {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 16px;
+    ;
+}
+
+.myquoteimg {
+    height: 300px;
+    background-image: url("../img/27.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: block;
+    color: #fff;
+    text-align: center;
+
+}
+
+.nomargin {
+    margin: 0% !important;
+    padding: 0% !important;
+}
+
+.socialMediaIcons {
+    margin: 30px;
+    font-size: 24px;
+}
+
+.noStyleType {
+    list-style-type: none;
+}
+
+#footer {
+     background-color:rgb(250, 244, 244); 
+    
+}
+
+#officeImg {
+    width: 100%;
+    height: 90%;
+}
+
+.aboutUsText {
+    text-align: justify;
+    margin: 2%;
+}
+
+.keepMargin {
+    margin: 2%;
+}
+
+.project {
+    height: 200px;
+    background-color: rgb(221, 221, 221);
+
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.borderStyle {
+    margin-top: 20px;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.noRightBorder {
+    border-right-width: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.noLeftRadius {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.curvedImg {
+    border-radius: 5px;
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=email]
+{
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical ;
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.service {
+    border-radius: 5px;
+    /* background-color: #493a3a;*/ 
+    background-image: url("../img/21.jpg");
+    padding: 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.collapse_custom {
+    position: absolute;
+    right: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .collapse_custom {
+        position: absolute;
+        right: 1rem;
+        width: 200px;
+        top: 10px;
+        background-color: #ffffffa6;
+        z-index: 9;
+    }
+
+    .collapse_custom>ul>li>.nav-link {
+        padding-left: 10px;
+    }
+}
+
+.head-text {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(../img/animated_text_fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+.mytrioimg{
+    margin: auto;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+ 
